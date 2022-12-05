@@ -25,6 +25,18 @@ public class Carro {
         }
     }
 
+    public void removeItemCarro(ItemCarro itemCarro){
+        if (items.contains(itemCarro)){
+            Optional<ItemCarro> optionalItemCarro=items.stream()
+                    .filter(i->i.equals(itemCarro))
+                    .findAny();
+            if (optionalItemCarro.isPresent()){
+                ItemCarro i= optionalItemCarro.get();
+                i.setCantidad(i.getCantidad()-1);
+            }
+        }
+    }
+
     public List<ItemCarro> getItems() {
         return items;
     }

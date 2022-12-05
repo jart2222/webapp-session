@@ -19,6 +19,8 @@ Carro  carro= (Carro) session.getAttribute("carro");
         <th>nombre</th>
         <th>precio</th>
         <th>cantidad</th>
+        <th>agregar</th>
+        <th>eliminar</th>
         <th>total</th>
     </tr>
     <%for(ItemCarro item: carro.getItems()){%>
@@ -27,11 +29,13 @@ Carro  carro= (Carro) session.getAttribute("carro");
         <td><%=item.getProducto().getNombre()%></td>
         <td><%=item.getProducto().getPrecio()%></td>
         <td><%=item.getCantidad()%></td>
+        <td><a href="<%=request.getContextPath()%>/agregar-carro?id=<%=item.getProducto().getId()%>">agregar </a></td>
+        <td><a href="<%=request.getContextPath()%>/elimar-carro?id=<%=item.getProducto().getId()%>">eliminar</a></td>
         <td><%=item.getImporte()%></td>
     </tr>
     <%}%>
     <tr>
-        <td colspan="4" style="text-aling: right">Total:</td>
+        <td colspan="6" style="text-aling: right">Total:</td>
         <td><%=carro.getTotal()%></td>
     </tr>
 </table>

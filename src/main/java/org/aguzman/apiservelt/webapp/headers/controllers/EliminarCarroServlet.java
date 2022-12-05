@@ -15,8 +15,8 @@ import org.aguzman.apiservelt.webapp.headers.services.ProductoServiceImpl;
 import java.io.IOException;
 import java.util.Optional;
 
-@WebServlet("/agregar-carro")
-public class AgregarCarroServlet extends HttpServlet {
+@WebServlet("/elimar-carro")
+public class EliminarCarroServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id = Long.parseLong(req.getParameter("id"));
@@ -26,13 +26,8 @@ public class AgregarCarroServlet extends HttpServlet {
             ItemCarro item = new ItemCarro(1, producto.get());
             HttpSession session = req.getSession();
             Carro carro;
-            if (session.getAttribute("carro") == null) {
-                carro = new Carro();
-                session.setAttribute("carro", carro);
-            } else {
-                carro = (Carro) session.getAttribute("carro");
-            }
-            carro.addItemCarro(item);
+            carro = (Carro) session.getAttribute("carro");
+            carro.removeItemCarro(item);
         }
         resp.sendRedirect(req.getContextPath() + "/ver-carro");
     }

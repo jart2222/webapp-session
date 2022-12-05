@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ebf7f93-56ce-428d-afd3-0017ebf43dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/AgregarCarroServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/VerCarroServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/models/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/models/ItemCarro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/carro.jsp" afterDir="false" />
+    <list default="true" id="3ebf7f93-56ce-428d-afd3-0017ebf43dde" name="Changes" comment="Carro de compra finalizado">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/EliminarCarroServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/ProductoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/ProductoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/services/LoginServiceCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/services/LoginServiceCookieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/services/LoginServiceSessionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/services/LoginServiceSessionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/services/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/services/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/services/ProductoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/services/ProductoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/AgregarCarroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/controllers/AgregarCarroServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/models/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aguzman/apiservelt/webapp/headers/models/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/carro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/carro.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/w10/Documents/developer g/developer JavaEE/webapp-session"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/w10/Documents/developer g/developer JavaEE/webapp-session&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.aguzman.apiservelt.webapp.headers.controllers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="tomcat" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -97,6 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670022026065</updated>
     </task>
+    <task id="LOCAL-00001" summary="Carro de compra finalizado">
+      <created>1670211330881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670211330881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Carro de compra finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carro de compra finalizado" />
   </component>
 </project>
