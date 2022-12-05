@@ -5,8 +5,12 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.aguzman.apiservelt.webapp.headers.controllers.services.*;
+import org.aguzman.apiservelt.webapp.headers.services.*;
 import org.aguzman.apiservelt.webapp.headers.models.Producto;
+import org.aguzman.apiservelt.webapp.headers.services.LoginService;
+import org.aguzman.apiservelt.webapp.headers.services.LoginServiceSessionImpl;
+import org.aguzman.apiservelt.webapp.headers.services.ProductoService;
+import org.aguzman.apiservelt.webapp.headers.services.ProductoServiceImpl;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -44,6 +48,7 @@ public class ProductoServlet extends HttpServlet {
             out.println("               <th>tipo</th>");
             if (usernameOptional.isPresent()){
                 out.println("               <th>precio</th>");
+                out.println("               <th>agregar</th>");
             }
             out.println("           </tr>");
             productos.forEach(p -> {
@@ -53,6 +58,11 @@ public class ProductoServlet extends HttpServlet {
                 out.println("               <td>" + p.getTipo() + "</td>");
                 if (usernameOptional.isPresent()){
                     out.println("               <td>" + p.getPrecio() + "</td>");
+                    out.println("               <td> <a href=\""
+                                                +req.getContextPath()
+                                                +"/agregar-carro?id="+p.getId()
+                                                + "\">agregar al carro</a></td>");
+
                 }
                 out.println("           </tr>");
             });

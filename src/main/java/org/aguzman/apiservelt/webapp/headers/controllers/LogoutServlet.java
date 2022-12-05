@@ -3,9 +3,8 @@ package org.aguzman.apiservelt.webapp.headers.controllers;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import org.aguzman.apiservelt.webapp.headers.controllers.services.LoginService;
-import org.aguzman.apiservelt.webapp.headers.controllers.services.LoginServiceCookieImpl;
-import org.aguzman.apiservelt.webapp.headers.controllers.services.LoginServiceSessionImpl;
+import org.aguzman.apiservelt.webapp.headers.services.LoginService;
+import org.aguzman.apiservelt.webapp.headers.services.LoginServiceSessionImpl;
 
 import java.io.IOException;
 import java.util.Optional;
