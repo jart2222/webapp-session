@@ -32,7 +32,15 @@ public class Carro {
                     .findAny();
             if (optionalItemCarro.isPresent()){
                 ItemCarro i= optionalItemCarro.get();
-                i.setCantidad(i.getCantidad()-1);
+                if (i.getCantidad()-1>0){
+                    i.setCantidad(i.getCantidad()-1);
+                }
+                else {
+                    items.remove(i);
+                }
+
+
+
             }
         }
     }
